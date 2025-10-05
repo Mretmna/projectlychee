@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from openaq import OpenAQ
+import uvicorn
 
 app = FastAPI()
 client = OpenAQ(api_key="421d3183b203d60430bad493a8ec7755db93e72a8e7a518e0ab29e069b836dcc")
